@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sidebar with html and css</title>
+	<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function openSideBar(){
+			document.getElementById('menu').style.width='250px';
+			document.getElementById('content').style.marginLeft='250px';
+		}
+
+		function closeSideBar(){
+			document.getElementById('menu').style.width='0';
+			document.getElementById('content').style.marginLeft='0';
+		}
+	</script>
+
+	<div id="content">
+		<span class="slide">
+			<a href="#" onclick="openSideBar()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</span>
+
+		<div class="nav" id="menu">
+			<a href="#" onclick="closeSideBar()">
+				<i class="fas fa-times"></i>
+			</a>
+			<a href="#">Home</a>
+			<a href="#">Galery</a>
+			<a href="#">Articles</a>
+			<a href="#">Profile</a>
+			<a href="#">Contact</a>
+		</div>
+		<h1>Here Content Page</h1>
+	</div>
+
+
+
+</body>
+</html>
